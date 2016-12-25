@@ -3,8 +3,21 @@ title: 基本语法
 layout: page
 category: grammar
 date: 2012-12-14
-modifiedOn: 2013-12-08
+modifiedOn: 2016-12-25
 ---
+
+编程语言的词法结构是一套基础规则，用来描述如何使用这门语言来编写程序。作为语法的基础，它规定了诸如变量名是什么样的，怎么写注释，以及程序语句之间，如何风隔等规则。
+
+## 字符集
+
+JavaScript程序是使用Unicode字符集编写。
+
+Unicode是ASCII和Latin-1的超集，并支持地球上几乎所有在用的语言。
+
+- ECMAScript 3 要求javascript的实现必须支持Unicode2.1或更高版本
+- ECMAScript 5 要求javascript的实现必须支持Unicode3.0及更高版本
+- ECMAScript 2015 要求javascript的实现必须支持Unicode5.1及更高版本
+- ECMAScript 2016 要求javascript的实现必须支持Unicode8.0.0及更高版本
 
 ## 语句
 
@@ -724,3 +737,5 @@ top:
 
 - Axel Rauschmayer, [A quick overview of JavaScript](http://www.2ality.com/2011/10/javascript-overview.html)
 
+## 修改记录
+2016-12-25 添加字符集
