@@ -189,7 +189,7 @@ greetMe('World')
 
 ## 许可证
 
-本教程采用创意共享[“署名—非商业性使用”](introduction/license.html)许可证（Creative Commons Attribution-NonCommercial license）。所有内容不仅可以免费阅读，还可以自由使用（比如转载），只需遵守两个条件：
+本教程采用创意共享[“署名—非商业性使用”](license.md)许可证（Creative Commons Attribution-NonCommercial license）。所有内容不仅可以免费阅读，还可以自由使用（比如转载），只需遵守两个条件：
 
 - **署名**：必须保留原作者的署名。
 
