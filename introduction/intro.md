@@ -3,32 +3,28 @@ title: 概述
 layout: page
 category: introduction
 date: 2013-10-06
-modifiedOn: 2014-01-09
+modifiedOn: 2016-12-25
 ---
 
 ## 内容简介
 
-本书全面介绍 JavaScript 核心语法，从最简单的开始讲起，循序渐进、由浅入深，力求清晰易懂。所有章节都带有大量的代码实例，便于理解和模仿，可以用到实际项目中，即学即用。
+本书全面介绍 JavaScript核心语法(ECMAScript)，从最简单的开始讲起，循序渐进、由浅入深，力求清晰易懂。所有章节都带有大量的代码实例，便于理解和模仿，可以用到实际项目中，即学即用。
 
 本书适合初学者当作JavaScript语言的入门教程，也适合当作日常使用的参考手册。
 
 ## 自序
 
-我想写这本书，主要原因是自己需要。
+成为前端也快2年了，总想记录点什么，写博客太零散，写笔记只能自己欣赏。所以最终打算写一本书。（我是打算上了年纪之后转行做老师的。）
 
-编程时，往往需要查阅资料，确定准确用法。理想的JavaScript参考书，应该简明易懂，一目了然，告诉我有哪些注意点，提供代码范例。如果涉及重要概念，还应该适当讲解。可是大多数时候，现实都不是如此。找到的资料冗长难懂，抓不住重点，有时还很陈旧，跟不上语言标准和浏览器的快速发展，且大多数是英文资料。
+原本我是想从头开始完全自己写，但是发现，太痛苦。所以最后选择的阮一峰老师的书，为基础，在此之上，我进行更新，添加，整理，成为我自己的书。所以后续，应该会把阮一峰老师的书，改的面目全非。
 
-学习过程中，我做了很多JavaScript笔记。多年累积，数量相当庞大。遇到问题，我首先查自己的笔记，如果笔记里没有，再到网上查，最后回过头把笔记补全。终于有一天，我意识到可以把笔记做成书，这就是这本书的由来。
-
-我想用自己的语言叙述JavaScript，按照自己的方式编排章节，便于将来的查阅。当然，另一个写作动力是觉得这些内容对他人有用，毕竟我花了那么多时间，整理成书可以节省其他人的时间。
-
-正因为脱胎于笔记，这本教程跟其他JavaScript书籍有所不同。
+毕竟脱胎于阮一峰老师的书，这本教程继承了不少优点。
 
 - 它有点像教程，包含重要概念的简洁讲解，努力把复杂的问题讲得简单，希望一两分钟内就能抓住重点。
 
 - 它又有点像参考手册，罗列主要用法和各种API接口，并给出可以立即运行的代码。所有章节按主题编排，不完全按照由浅入深的学习顺序编排，这是为了方便查阅。
 
-- 它主要关注编程实战遇到的问题，从语言本身到浏览器接口都涉及，容易出错的一些细节尤其讲得多。
+- 它主要关注编程实战遇到的问题，从语言本身到浏览器、nodejs接口都涉及，容易出错的一些细节尤其讲得多。
 
 需要说明的是，本书章节的编排尽量适合初学者的需要，方便循序渐进地阅读。但是，JavaScript语言的体系庞大，各种内容不可避免地互相涉及，偶尔会提前讲到后面章节的内容。所以，如果你发现某处出现陌生的新概念，请不要担心，可以继续阅读下去。以后查阅这些章节的时候，你会发现这样很方便找到，跟某个知识点相关的所有内容。
 
@@ -44,13 +40,13 @@ JavaScript是一种嵌入式（embedded）语言。它本身提供的核心语�
 
 JavaScript的核心语法部分相当精简，只包括两个部分：基本的语法构造（比如操作符、控制结构、语句）和标准库（就是一系列具有各种功能的对象比如`Array`、`Date`、`Math`等）。除此之外，各种宿主环境提供额外的API（即只能在该环境使用的接口），以便JavaScript调用。以浏览器为例，它提供的额外API可以分成三大类。
 
-- 浏览器控制类：操作浏览器
+- BOM类：操作浏览器
 - DOM类：操作网页的各种元素
 - Web类：实现互联网的各种功能
 
 如果宿主环境是服务器，则会提供各种操作系统的API，比如文件操作API、网络通信API等等。这些你都可以在Node环境中找到。
 
-本书主要介绍JavaScript核心语法和浏览器网页开发的基本知识，不涉及Node。全书可以分成以下五大部分。
+本书主要介绍JavaScript核心语法、浏览器网页开发、Node.js。全书可以分成以下五大部分。
 
 - 基本语法
 - 标准库
@@ -58,7 +54,7 @@ JavaScript的核心语法部分相当精简，只包括两个部分：基本的�
 - DOM
 - Web API
 
-JavaScript语言有多个版本。目前最新的版本是ECMAScript 2016，从历史上看，它属于ECMAScript的第6个版本，又称ES6。本书的内容基于ECMAScript 5.1版本，这是使用最广泛的版本，也是学习JavaScript的基础。ES6和更新的ES7语法请参考我写的[《ECMAScript 6入门》](http://es6.ruanyifeng.com/)。
+JavaScript有多个版本。目前最新的版本是ECMAScript 2016，从历史上看，它属于JavaScript的第7个版本，又称ES7。
 
 ## 为什么学习JavaScript？
 
@@ -66,7 +62,7 @@ JavaScript语言有一些显著特点，使得它非常值得学习。它既适�
 
 ### 操控浏览器的能力
 
-JavaScript的发明目的，就是作为浏览器的内置脚本语言，为网页开发者提供操控浏览器的能力。它是目前唯一一种通用的浏览器脚本语言，所有浏览器都支持。它可以让网页呈现各种特殊效果，为用户提供良好的互动体验。
+JavaScript作为唯一一种通用浏览器内置脚本语言JavaScript的核心，为网页开发者提供操控浏览器的能力。它可以让网页呈现各种特殊效果，为用户提供良好的互动体验。
 
 目前，全世界几乎所有网页都使用JavaScript。如果不用，网站的易用性和使用效率将大打折扣，无法成为操作便利、对用户友好的网站。
 
@@ -92,9 +88,7 @@ JavaScript甚至也可以用来操作数据库。NoSQL数据库这个概念，�
 
 JavaScript也正在成为手机应用的开发语言。一般来说，安卓平台使用Java语言开发，iOS平台使用Objective-C或Swift语言开发。许多人正在努力，让JavaScript成为各个平台的通用开发语言。
 
-PhoneGap项目就是将JavaScript和HTML5打包在一个容器之中，使得它能同时在iOS和安卓上运行。Facebook的React Native项目则是将JavaScript写的组件，编译成原生组件，从而使它们具备优秀的性能。
-
-Mozilla基金会的手机操作系统Firefox OS，更是直接将JavaScript作为操作系统的平台语言。
+Crodova项目就是将JavaScript和HTML5打包在一个容器之中，使得它能同时在iOS和安卓上运行。Facebook的React Native项目则是将JavaScript写的组件，编译成原生组件，从而使它们具备优秀的性能。
 
 **（5）内嵌脚本语言**
 
@@ -106,7 +100,7 @@ Chromium OS、Windows 8等操作系统直接支持JavaScript编写应用程序�
 
 **（7）小结**
 
-可以预期，JavaScript最终将能让你只用一种语言，就开发出适应不同平台（包括桌面端、服务器端、手机端）的程序。根据2013年9月的[统计](http://adambard.com/blog/top-github-languages-for-2013-so-far/)，JavaScript是本年度代码托管网站Github上使用量排名第一的语言。
+可以预期，JavaScript最终将能让你只用一种语言，就开发出适应不同平台（包括桌面端、服务器端、手机端）的程序。根据2016年[统计](http://top.jobbole.com/35580/?utm_source=ios.jobbole.com&utm_medium=sidebar-top-news)，JavaScript是本年度代码托管网站Github上使用量排名第一的语言。
 
 著名程序员Jeff Atwood甚至提出了一条[“Atwood定律”](http://www.codinghorror.com/blog/2007/07/the-principle-of-least-power.html)：
 
@@ -195,25 +189,14 @@ greetMe('World')
 
 ## 许可证
 
-本教程采用创意共享[“署名—非商业性使用”](http://javascript.ruanyifeng.com/introduction/license.html)许可证（Creative Commons Attribution-NonCommercial license）。所有内容不仅可以免费阅读，还可以自由使用（比如转载），只需遵守两个条件：
+本教程采用创意共享[“署名—非商业性使用”](introduction/license.html)许可证（Creative Commons Attribution-NonCommercial license）。所有内容不仅可以免费阅读，还可以自由使用（比如转载），只需遵守两个条件：
 
 - **署名**：必须保留原作者的署名。
 
 - **非商业性使用**：除非得到正式许可，否则不得用于商业目的。
 
-事实上，你还可以得到这本教程的源码。它就放在[Github](https://github.com/ruanyf/jstutorial)上，欢迎克隆和提交Pull Request。
+事实上，你还可以得到这本教程的源码。它就放在[Github](https://github.com/fan19900404/ECMAScript-Handbook)上，欢迎克隆和提交Pull Request。
 
-## 参考书目
 
-写作过程中，我参考了以下书籍（排名不分先后）。
-
-- Nicholas C. Zakas, [Professional JavaScript for Web Developers](http://www.amazon.com/Professional-JavaScript-Developers-Nicholas-Zakas/dp/1118026691), 3 edition, Wrox, 2012
-- Axel Rauschmayer, [The Past, Present, and Future of JavaScript](http://oreilly.com/javascript/radarreports/past-present-future-javascript.html), O'Reilly, 2012
-- Cody Lindley, [JavaScript Enlightenment](http://www.javascriptenlightenment.com/), O'Reilly, 2012
-- Cody Lindley, [DOM Enlightenment](http://domenlightenment.com/), O'Reilly, 2013
-- Rebecca Murphey, [jQuery Fundamentals](http://github.com/rmurphey/jqfundamentals), 2011
-- Aaron Frost, [JS.next: A Manager’s Guide](http://chimera.labs.oreilly.com/books/1234000001623), O'Reilly, 2013
-- John Resig, Bear Bibeault, [Secrets of the JavaScript Ninja](http://www.manning.com/resig/), Manning, 2012
-
-- Eric Elliott, [Programming JavaScript Applications](http://chimera.labs.oreilly.com/books/1234000000262), O'Reilly, 2013
-- 邱俊涛, [JavaScript核心概念及实践](http://icodeit.org/jsccp/)，人民邮电出版社，2013
+## 文档记录
+2016-12-25 修改全文，更改es6的错误，更新2016年的统计，更改为我的创作意图
