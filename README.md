@@ -15,11 +15,11 @@ modifiedOn: 2016-12-25
 ## grammar 语法 
 
 - [基本语法](grammar/basic.md)
-- 变量
+- [变量](grammar/变量.md)
 - [数据类型](grammar/types.md)
 - [数值](grammar/number.md)
-- 表达式
-- 控制语句
+- [表达式与运算符](grammar/表达式与运算符.md)
+- [控制语句](grammar/控制语句.md)
 - [字符串](grammar/string.md)
 - [对象](grammar/object.md)
 - [数组](grammar/array.md)
