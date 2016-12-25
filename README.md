@@ -1,11 +1,11 @@
 ---
 layout: homepage
-title: JavaScript 标准参考教程（alpha）
-date: 2012-11-18
-modifiedOn: 2014-05-18
+title: ECMAScript-Handbook
+date: 2016-12-25
+modifiedOn: 2016-12-25
 ---
 
-# ECMAScript-Handbook
+2016/12/25，我将阮一峰老师的[JavaScript 标准参考教程（alpha）](http://javascript.ruanyifeng.com/)现有文章从github上搬过来，同时准备，以目前es2016为基础，修改编辑添加归纳成自己的ECMAScript-Handbook（ES指南）。
 
 ## introduction 导论
 
