@@ -1,4 +1,3 @@
-# ECMAScript-Handbook
 ---
 layout: homepage
 title: JavaScript 标准参考教程（alpha）
@@ -6,12 +5,14 @@ date: 2012-11-18
 modifiedOn: 2014-05-18
 ---
 
-<h2 id="introduction">导论</h2>
+# ECMAScript-Handbook
+
+## introduction 导论
 
 - [概述](introduction/intro.md)
 - [JavaScript的历史](introduction/history.md)
 
-<h2 id="grammar">语法</h2>
+## grammar 语法 
 
 - [基本语法](grammar/basic.md)
 - [数据类型](grammar/types.md)
@@ -25,7 +26,7 @@ modifiedOn: 2014-05-18
 - [错误处理机制](grammar/error.md)
 - [编程风格](grammar/style.md)
 
-<h2 id="stdlib">标准库</h2>
+## stdlib 标准库
 
 - [Object对象](stdlib/object.md)
 - [Array对象](stdlib/array.md)
@@ -39,7 +40,7 @@ modifiedOn: 2014-05-18
 - [console对象](stdlib/console.md)
 - [属性描述对象](stdlib/attributes.md)
 
-<h2 id="oop">面向对象编程</h2>
+## oop 面向对象编程
 
 - [概述](oop/basic.md)
 - [this 关键字](oop/this.md)
@@ -47,14 +48,14 @@ modifiedOn: 2014-05-18
 - [Object 对象与继承](oop/object.md)
 - [面向对象编程的模式](oop/pattern.md)
 
-<h2 id="advanced">语法专题</h2>
+## advanced 语法专题
 
 - [单线程模型](advanced/single-thread.md)
 - [定时器](advanced/timer.md)
 - [Promise](advanced/promise.md)
 - [严格模式](advanced/strict.md)
 
-<h2 id="dom">DOM模型</h2>
+## DOM模型
 
 - [概述](dom/node.md)
 - [Document节点](dom/document.md)
@@ -66,7 +67,7 @@ modifiedOn: 2014-05-18
 - [CSS操作](dom/css.md)
 - [Mutation Observer](dom/mutationobserver.md)
 
-<h2 id="bom">浏览器环境</h2>
+## bom 浏览器环境
 
 - [概述](bom/engine.md)
 - [window对象](bom/window.md)
@@ -81,7 +82,7 @@ modifiedOn: 2014-05-18
 - [Performance API](bom/performance.md)
 - [移动设备API](bom/mobile.md)
 
-<h2 id="mdapi">md网页的API</h2>
+## md网页的API
 
 - [概述](mdapi/elements.md)
 - [Canvas](mdapi/canvas.md)
@@ -100,7 +101,7 @@ modifiedOn: 2014-05-18
 
 ---
 
-<h2 id="library">废稿</h2>
+## library 废稿
 
 - [Underscore.js](library/underscore.md)
 - [Modernizr](library/modernizr.md)
@@ -120,7 +121,7 @@ modifiedOn: 2014-05-18
 - [Source map](tool/sourcemap.md)
 - [有限状态机](advanced/fsm.md)
 
-<h2 id="jquery">草稿：jQuery</h2>
+## 草稿：jQuery
 
 - [概述](jquery/basic.md)
 - [工具方法](jquery/utility.md)
@@ -128,7 +129,7 @@ modifiedOn: 2014-05-18
 - [deferred对象](jquery/deferred.md)
 - [如何做到jQuery-free？](jquery/jquery-free.md)
 
-<h2 id="nodejs">草稿：Node.js</h2>
+## Node.js
 
 - [概述](nodejs/basic.md)
 - [Module](nodejs/module.md)
@@ -148,29 +149,3 @@ modifiedOn: 2014-05-18
 - [Net模块和DNS模块](nodejs/net.md)
 - [Express框架](nodejs/express.md)
 - [Koa框架](nodejs/koa.md)
-
-{% comment %}
-
-{% if site.posts.size != 0 %}
-
-## 最新文章
-
-{% for post in site.posts %}
-* {{ post.date | date_to_string }} [{{ post.title }}]({{ post.url }})
-{% endfor %}
-
-{% endif %}
-
-{% if site.pages.size != 0 %}
-
-## 最新页面
-
-{% for page in site.pages limit:5 %}
-{% if page.url !='/index.md' %}
-* [{{ page.title }}]( {{ page.url }})（{{ page.date }}）
-{% endif %}
-{% endfor %}
-
-{% endif %}
-
-{% endcomment %}
