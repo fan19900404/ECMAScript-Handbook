@@ -3,7 +3,7 @@ title: JavaScript语言的历史
 category: introduction
 layout: page
 date: 2015-11-21
-modifiedOn: 2015-11-21
+modifiedOn: 2016-12-25
 ---
 
 ## JavaScript的诞生
@@ -14,7 +14,7 @@ JavaScript因为互联网而生，紧随着浏览器的出现而问世。回顾�
 
 1992年底，美国国家超级电脑应用中心（NCSA）开始开发一个独立的浏览器，叫做Mosaic。这是人类历史上第一个浏览器，从此网页可以在图形界面的窗口浏览。
 
-1994年10月，NCSA的一个主要程序员Marc Andreessen联合风险投资家Jim Clark，成立了Mosaic通信公司（Mosaic Communications），不久后改名为Netscape。这家公司的方向，就是在Mosaic的基础上，开发面向普通用户的新一代的浏览器Netscape Navigator。
+1994年10月，NCSA的一个主要程序员Marc Andreessen联合风险投资家Jim Clark，成立了Mosaic通信公司（Mosaic Communications），不久后改名为Netscape（网景）。这家公司的方向，就是在Mosaic的基础上，开发面向普通用户的新一代的浏览器Netscape Navigator。
 
 1994年12月，Navigator发布了1.0版，市场份额一举超过90%。
 
@@ -83,13 +83,15 @@ JavaScript的基本语法和对象体系，是模仿Java而设计的。但是，
 
 2011年6月，ECMAscript 5.1版发布，并且成为ISO国际标准（ISO/IEC 16262:2011）。到了2012年底，所有主要浏览器都支持ECMAScript 5.1版的全部功能。
 
-2013年3月，ECMAScript 6草案冻结，不再添加新功能。新的功能设想将被放到ECMAScript 7。
+2013年3月，ECMAScript 6草案冻结，不再添加新功能。新的功能设想将被放到之后的版本。
 
 2013年12月，ECMAScript 6草案发布。然后是12个月的讨论期，听取各方反馈。
 
-2015年6月，ECMAScript 6正式发布，并且更名为“ECMAScript 2015”。这是因为TC39委员会计划，以后每年发布一个ECMAScirpt的版本，下一个版本在2016年发布，称为“ECMAScript 2016”。
+2015年6月，ECMAScript 6正式发布，并且更名为“ECMAScript 2015”。同时TC39委员会计划，以后每年发布一个ECMAScirpt的版本，比如在2016年发布的版本，被称为“ECMAScript 2016”。
 
-除了ECMAScript的版本，很长一段时间中，Netscape公司（以及继承它的Mozilla基金会）在内部依然使用自己的版本号。这导致了JavaScript有自己不同于ECMAScript的版本号。1996年3月，Navigator 2.0内置了JavaScript 1.0。JavaScript 1.1版对应ECMAScript 1.0，但是直到JavaScript 1.4版才完全兼容ECMAScript 1.0。JavaScript 1.5版完全兼容ECMAScript 3.0。目前的JavaScript 1.8版完全兼容ECMAScript 5。
+2016年6月，ECMAScript 2016 正式发布。与ECMAScript2015相比，它只增加了两个较小的特性。
+
+除了ECMAScript的版本，很长一段时间中，Netscape公司（以及继承它的Mozilla基金会）在内部依然使用自己的版本号。这导致了JavaScript有自己不同于ECMAScript的版本号。1996年3月，Navigator 2.0内置了JavaScript 1.0。JavaScript 1.1版对应ECMAScript 1.0，但是直到JavaScript 1.4版才完全兼容ECMAScript 1.0。JavaScript 1.5版完全兼容ECMAScript 3.0。后来的JavaScript 1.8版完全兼容ECMAScript 5。最后一个版本是javascript1.8.5。之后就沿用ECMAScript的版本。
 
 ## 周边大事记
 
@@ -153,6 +155,8 @@ JavaScript伴随着互联网的发展一起发展。互联网周边技术的快�
 
 2011年，微软工程师[Scott Hanselman](http://www.hanselman.com/blog/JavaScriptIsAssemblyLanguageForTheWebSematicMarkupIsDeadCleanVsMachinecodedHTML.aspx)提出，JavaScript将是互联网的汇编语言。因为它无所不在，而且正在变得越来越快。其他语言的程序可以被转成JavaScript语言，然后在浏览器中运行。
 
+2011年，Intel公司发布nodeWebkit（后改名NW.js）项目，支持使用javascript开发桌面应用。
+
 2012年，单页面应用程序框架（single-page app framework）开始崛起，AngularJS项目和Ember项目都发布了1.0版本。
 
 2012年，微软发布TypeScript语言。该语言被设计成JavaScript的超集，这意味着所有JavaScipt程序，都可以不经修改地在TypeScript中运行。同时，TypeScript添加了很多新的语法特性，主要目的是为了开发大型程序，然后还可以被编译成JavaScript运行。
@@ -169,6 +173,8 @@ JavaScript伴随着互联网的发展一起发展。互联网周边技术的快�
 
 2014年11月，由于对Joyent公司垄断Node项目、以及该项目进展缓慢的不满，一部分核心开发者离开了Node.js，创造了io.js项目，这是一个更开放、更新更频繁的Node.js版本，很短时间内就发布到了2.0版。三个月后，Joyent公司宣布放弃对Node项目的控制，将其转交给新成立的开放性质的Node基金会。随后，io.js项目宣布回归Node，两个版本将合并。
 
+2014年，github公司发布Atom-shell(后改名 Electron.js)。
+
 2015年3月，Facebook公司发布了React Native项目，将React框架移植到了手机端，可以用来开发手机App。它会将JavaScript代码转为iOS平台的Objective-C代码，或者Android平台的Java代码，从而为JavaScript语言开发高性能的原生App打开了一条道路。
 
 2015年4月，Angular框架宣布，2.0版将基于微软公司的TypeScript语言开发，这等于为JavaScript语言引入了强类型。
@@ -183,9 +189,5 @@ JavaScript伴随着互联网的发展一起发展。互联网周边技术的快�
 
 2016年6月，《ECMAScript 2016 标准》发布。与前一年发布的版本相比，它只增加了两个较小的特性。
 
-## 参考链接
-
-- Axel Rauschmayer, [The Past, Present, and Future of JavaScript](http://oreilly.com/javascript/radarreports/past-present-future-javascript.csp)
-- John Dalziel, [The race for speed part 4: The future for JavaScript](http://creativejs.com/2013/06/the-race-for-speed-part-4-the-future-for-javascript/)
-- Axel Rauschmayer, [Basic JavaScript for the impatient programmer](http://www.2ality.com/2013/06/basic-javascript.html)
-- resin.io, [Happy 18th Birthday JavaScript! A look at an unlikely past and bright future](http://resin.io/happy-18th-birthday-javascript/)
+## 修改日志
+2016-12-25 修正了部分措辞，添加了nw.js与Electron.js 
