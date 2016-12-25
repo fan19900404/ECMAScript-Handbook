@@ -179,11 +179,7 @@ JavaScript的上手非常方便，只要电脑安装了浏览器，就可以用�
 将下面的程序复制到“控制台”，按下回车后，就可以看到运行结果。
 
 ```javascript
-function greetMe(yourName) {
-  console.log('Hello ' + yourName);
-}
-
-greetMe('World')
+console.log('Hello World');
 // Hello World
 ```
 
